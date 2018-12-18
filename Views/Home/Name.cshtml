@@ -1,0 +1,17 @@
+@using CRUD.Models
+@model Dish
+
+
+<a href ="/">Home</a>
+<h2>@ViewBag.Show.Name</h2>
+<h3>@ViewBag.Show.Chef</h3>
+
+
+<h5> A new twist on classic favorie. Try with some Frech Fry</h5>
+<p>Calories: @ViewBag.Show.Calories</p>
+<p>Tasiness: @ViewBag.Show.Tastiness</p>
+
+
+<a href ="/delete/@Model.iddishes">Delete</a>
+
+<a href ="/update/@ViewBag.Show.iddishes">Edit</a>

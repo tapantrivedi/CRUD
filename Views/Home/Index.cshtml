@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using CRUD.Models
+    
+<h1>Welcome to CRUD Delicious</h1><br>
+
+<h3>Check out some recent dishes!</h3>
+<a href="/Add">Add a Dish</a><br>
+@foreach (var x in @Model)
+{
+    <p><a href ="@x.iddishes">@x.Name</a> by @x.Chef</p>
+}
